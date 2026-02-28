@@ -1,0 +1,29 @@
+* {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    color: #141414;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,p{
+    margin: 0px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.subtitulo{
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 6ch;
+    /* min-width: 5ch; */
+    font-family: "TINOS", serif;
+}
+

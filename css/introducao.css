@@ -1,0 +1,78 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:100px;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.introducao h1{
+    font-size: 4rem;
+    line-height: 0.9125;
+    margin-bottom: 20px;
+    position: relative;
+}
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url("../imagens/svgs/svgs-introducao/retangulo-introducao.svg") no-repeat center;
+    position: absolute;
+    top: -22px;
+    left: -80px;
+}
+#lista-habilidade-icones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+#lista-habilidade-icones > li{
+    padding: 0.9rem;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+    
+}
+.introducao p{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color:#858585;
+}
+@media (max-width:1000px){
+    .introducao h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width:800px){
+    .introducao{
+        gap:45px;
+    }
+    .introducao {
+        font-size: 2.6rem;
+        grid-template-columns: 1fr;
+    }
+    .introducao > img{
+        display: none;
+    }
+    main{
+        justify-items: center;
+        align-items: center;
+    }
+    .introducao h1::before{
+        height: 10px;
+        top: 4px;
+    }
+}
+@media(max-width:400px){
+    .introducao h1{
+        font-size: 2rem;
+    }
+    #lista-habilidade-icones{
+        display: none;
+    }
+
+}
